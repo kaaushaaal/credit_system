@@ -34,7 +34,7 @@ credit_system/
 
 ### Clone repo locally
 ```bash
-git clone https://github.com/<your-username>/credit-approval-system.git
+git clone https://github.com/kaaushaaal/credit-approval-system.git
 cd credit-approval-system
 ```
 
