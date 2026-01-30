@@ -1,0 +1,53 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+
+# =========================
+# Virtual Environments
+# =========================
+venv/
+.env/
+.env.*
+
+# =========================
+# Django
+# =========================
+*.log
+db.sqlite3
+staticfiles/
+media/
+
+# =========================
+# Docker
+# =========================
+*.pid
+docker-data/
+postgres_data/
+
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# =========================
+# Testing / Coverage
+# =========================
+.coverage
+htmlcov/
+
+
+# =========================
+# Migrations Cache (keep migrations, ignore cache)
+# =========================
+**/__pycache__/
