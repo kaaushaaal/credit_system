@@ -39,11 +39,11 @@ docker-compose up --build
 ```
 **Startup Flow:**
 
-    1. Docker Compose builds the Django image and installs all dependencies.
-    2. The PostgreSQL database container starts and becomes ready.
-    3. Django applies database migrations to create required tables.
-    4. Initial customer and loan data is loaded from Excel files.
-    5. The Django server starts and all APIs become available.
+1. Docker Compose builds the Django image and installs all dependencies.
+2. The PostgreSQL database container starts and becomes ready.
+3. Django applies database migrations to create required tables.
+4. Initial customer and loan data is loaded from Excel files.
+5. The Django server starts and all APIs become available.
 
 No additional setup or manual commands are required after this.
 
