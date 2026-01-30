@@ -32,11 +32,17 @@ credit_system/
 
 ## Running the Application (Docker)
 
-### Build and start containers
+### Clone repo locally
+```bash
+git clone https://github.com/<your-username>/credit-approval-system.git
+cd credit-approval-system
+```
 
+### Build and start containers
 ```bash
 docker-compose up --build
 ```
+
 **Startup Flow:**
 
 1. Docker Compose builds the Django image and installs all dependencies.
