@@ -17,6 +17,9 @@ COPY . .
 # Expose Django port
 EXPOSE 8000
 
+# Fix line endings for entrypoint script
+RUN sed -i 's/\r$//' /entrypoint.sh
+
 # Run Django server
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
