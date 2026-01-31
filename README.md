@@ -34,8 +34,8 @@ credit_system/
 
 ### Clone repo locally
 ```bash
-git clone https://github.com/kaaushaaal/credit-approval-system.git
-cd credit-approval-system
+git clone https://github.com/kaaushaaal/credit_system.git
+cd credit_system
 ```
 
 ### Build and start containers
