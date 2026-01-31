@@ -11,18 +11,17 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --upgrade pip && pip install -r requirements.txt
 
-# Copy project
+# Copy project files
 COPY . .
+
+# Copy entrypoint script
+COPY entrypoint.sh /entrypoint.sh
+
+# Fix Windows line endings and make executable
+RUN sed -i 's/\r$//' /entrypoint.sh && chmod +x /entrypoint.sh
 
 # Expose Django port
 EXPOSE 8000
 
-# Fix line endings for entrypoint script
-RUN sed -i 's/\r$//' /entrypoint.sh
-
-# Run Django server
-COPY entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
-
+# Start app
 ENTRYPOINT ["/entrypoint.sh"]
-
